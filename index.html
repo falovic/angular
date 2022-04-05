@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Angular</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+
+    <h1>MUSEUM</h1>
+
+    <div ng-app="">
+
+        <div class="card">
+            <h2>VISITOR</h2>
+
+            <div>
+                <img src="https://icon-library.com/images/user-png-icon/user-png-icon-16.jpg" alt="user">
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td ng-bind="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Surname</th>
+                        <td ng-bind="sname"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div class="card">
+
+
+        <form action="">
+            <input type="text" ng-model="name" name="name" placeholder="Name" required>
+
+            <br><br>
+
+            <input type="text" ng-model="sname" name="surname" placeholder="Surname" required>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
